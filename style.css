@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+/* Global */
+.grid{
+    padding-top: 20vh;
+}
+
+.circular-image {
+    border: 1px solid #ffffff;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2dcad2;
+    color: #ffffffd8;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2, .white{
+    color: #00135fd8;
+}
+
+a{
+    color: #00135fd8;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.section_1{
+    padding-top: 2vh;
+}
+
+.section_1 h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section_1 p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.section_1 a{
+    display: block;
+    padding: 20px;
+    font-size: 1.3rem;
+    padding-left: 0;
+    width: 100%;
+}
+
+.list{
+    font-size: 1.2rem;
+    font-style: bold;
+}
+
+/* Utilities */
+.section_1 a:hover{
+    font-size: 1.4rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+/* Media Queres */
+@media(max-width:700px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section_1{
+        padding:0;
+        padding-left: 1.5rem;
+    }
+}
